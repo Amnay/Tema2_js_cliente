@@ -1,0 +1,27 @@
+<!DOCTYPE html> <html> <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Calculadora </title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){ 
+        $('#but').on('click', function(){
+          $('#res').val(JSON.parse($('#exp').val()));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      Introduzca una expresion: <br>
+      <input type="text" name="expr" size="20" id="exp">
+         </input><P>
+      <input type="button" value="Calcular" id="but">
+         </input><P>
+      Resultado: <p>
+      <input type="text" name="result" size="20" id="res">
+         </input>
+    </form>
+  </body>
+</html>

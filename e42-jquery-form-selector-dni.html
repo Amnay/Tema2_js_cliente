@@ -1,0 +1,31 @@
+<!DOCTYPE html> <html> <head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+  <title>jQuery example</title>
+  <script type='text/javascript' src='jquery.min.js'></script>
+
+  <script>
+    $(function(){
+      $('#Nombre').on('click', function() {
+         $('.Nombre').removeAttr('disabled');
+         $('.email').attr('disabled', true); });
+
+      $('#email').on('click', function() {
+         $('.email').removeAttr('disabled');[]
+         $('.Nombre').attr('disabled', true); });
+    });
+  </script>
+</head>
+<body>
+  <h3>Login</h3><p>
+  <form action=''>
+    
+    <input type='radio' id='Nombre' name='sel' checked>
+      DNI: 
+       <input type='text' class='Nombre'><p>
+
+    <input type='radio' id='email' name='sel'>
+       email: 
+       <input type='text' class='email' disabled>
+  </form>
+</body>
+</html>

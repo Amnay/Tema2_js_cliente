@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Today's Date</title>
+
+<script type="text/javascript">
+function print_date( ) {
+  var cl = document.getElementById("clock");
+  var d = new Date();
+  cl.innerHTML = "  hour: " + d.getHours() + 
+                 ", min: " + d.getMinutes() + 
+                 ", sec: " + d.getSeconds() + 
+                 ", ms: " + d.getMilliseconds();  
+}
+</script>
+
+</head>
+
+<body>
+<h2>The date and time are:</h2>
+
+<div id="clock"><div>
+
+<script type="text/javascript">
+
+  setInterval(function(){print_date()}, 1);
+</script>
+
+</body>
+</html>

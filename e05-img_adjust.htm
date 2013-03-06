@@ -1,0 +1,25 @@
+<html><head><title>Event Example</title></head>
+<body>
+<h4> Event example </h4>
+
+<img src="a1.png" id="img"  width="70"  height="70" />
+
+<form>
+Width:  <input type='text'   id='wid' value='70' size='5'/> <br>
+Height: <input type='text'   id='hei' value='70' size='5'/> <br>
+        <input type='button' id='but' value='aplicar'/> 
+</form>
+
+<script type="text/javascript">
+  var img = document.getElementById('img'), 
+      wid = document.getElementById('wid'),
+      hei = document.getElementById('hei'),
+      but = document.getElementById('but');
+
+  but.onclick = function() {
+  	             img.width  = wid.value ; 
+  	             img.height = hei.value ;
+  	         };
+</script>
+</body>
+</html>

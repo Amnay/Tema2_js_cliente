@@ -1,0 +1,20 @@
+<html><head><title>Event Example</title></head>
+<body>
+
+<h4> Event example </h4>
+
+<img name="img" src="a1.png" id="i1"/>
+
+<script type="text/javascript">     // DOM de img debe estar
+                                    // construido al ejecutar script
+
+  var i=document.getElementById('i1'); // equivalente a:
+                                       // var i=document.images[0];
+
+  i.onmouseout  = function () {i.src='a1.png'};
+  i.onmouseover = function () {i.src='a2.png'};
+  i.onclick     = function () {i.src='a3.png'};
+</script>
+
+</body>
+</html>

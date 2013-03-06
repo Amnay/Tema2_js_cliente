@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Ejemplo </title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){ 
+        $('#but').on('click', function(){ $('#imag').width($('#wid').val()).height($('#hei').val()); });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h4> jQuery example</h4>
+
+    <img name='i' src="a1.png" id="imag"  width="70"  height="70" />
+
+    <form>
+      Width:  <input type='text'   id='wid' value='70' size='5'/> <br>
+      Height: <input type='text'   id='hei' value='70' size='5'/> <br>
+              <input type='button' id='but' value='aplicar'/>
+    </form>
+  </body>
+</html>

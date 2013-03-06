@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Ejemplo </title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){ 
+      	var img = $('#imag');
+        img.on('mouseout',  function(){img.attr('src', 'a1.png')});
+        img.on('mouseover', function(){img.attr('src', 'a2.png')});
+        img.on('click',     function(){img.attr('src', 'a3.png')});
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <h4> Event example </h4>
+
+    <img src="a1.png" id="imag"/>
+  </body>
+</html>

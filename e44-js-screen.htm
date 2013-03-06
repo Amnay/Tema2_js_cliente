@@ -1,0 +1,21 @@
+<html>
+<head><title> Window and Screen Objects</title>
+</head>
+
+<body>
+<h1>Window and Screen Objects</h1>
+
+<div id="props"><div>
+
+<script type="text/javascript">
+    var cl = document.getElementById("props");
+    cl.textContent = "width/availWidth: " + screen.width.toString() + ", " + screen.availWidth + "<br>";
+
+//    cl.innerHTML = screen.width.toString() + ", " + screen.availWidth + "<br>";
+    cl.insertAdjacentHTML("beforeend", "<br>height/availHeight: " + screen.height + ", " + screen.availHeight);
+
+</script>
+
+</body>
+</html>
+

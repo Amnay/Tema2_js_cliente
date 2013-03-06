@@ -1,0 +1,17 @@
+<HTML> <HEAD> <TITLE> Calculadora Inspect</TITLE> </HEAD> 
+
+<BODY>
+
+<script >
+var o = window;
+var j=0, x;
+
+for (j in o) { 
+  try { 
+   	if ((x = JSON.stringify(o[j]).replace(/,/g,",<br>-----> ")) && (x != "null"))
+             { document.write(j + " = " + x + "<p>");}}
+    catch (ex){}
+}
+</script>
+</BODY>
+</HTML>

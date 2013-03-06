@@ -1,0 +1,15 @@
+<html>
+<head><title> Ejemplo 1 Javascript</title></head>
+<body>
+<h2> Propiedades: screen </h2>
+
+<script >
+var o = screen, i=0;
+
+for (i in o) { 
+    try { document.write(i + " = " + JSON.stringify(o[i]) + "<p>");}
+    catch (ex){}
+ }
+</script>
+</body>
+</html> 
